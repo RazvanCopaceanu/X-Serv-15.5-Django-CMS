@@ -1,7 +1,7 @@
 from django.db import models
 
-# Create your models here.
-
 class Pages(models.Model):
-    name = models.CharField(max_length=32)
-    page = models.TextField()
+    nombre = models.CharField(max_length=32)
+    pagina = models.TextField()
+    def __str__(self):
+        return self.nombre
